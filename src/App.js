@@ -21,7 +21,11 @@ export default function App() {
       node.status = STATUS.CHECKED;
     } else if (unCheckedCount === node.children.length) {
       node.status = STATUS.UNCHECKED;
-    } else if (checkedCount > 0 || unCheckedCount > 0) {
+    } else if (
+      checkedCount > 0 ||
+      unCheckedCount > 0 ||
+      indeterminateCount > 0
+    ) {
       node.status = STATUS.INDETERMINATE;
     }
   };
