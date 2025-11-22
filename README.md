@@ -1,0 +1,2 @@
+# IndeterminateCheckbox
+Created with CodeSandbox
